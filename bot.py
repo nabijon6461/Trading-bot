@@ -29,7 +29,7 @@ import requests
 # -----------------------------
 # CONFIG - ADMIN o'zgarishi mumkin
 # -----------------------------
-TOKEN = os.getenv("8311598762:AAF4U6q2wr8aJ0wfDvmkP3pe6_EAerZLLYA") or "YOUR_BOT_TOKEN_HERE"   # ADMIN: shu yerga tokeningizni qo'ying yoki GitHub secrets orqali BOT_TOKEN o'zgaruvchisidan foydalaning
+TOKEN = os.getenv("BOT_TOKEN") or "YOUR_BOT_TOKEN_HERE"   # ADMIN: shu yerga tokeningizni qo'ying yoki GitHub secrets orqali BOT_TOKEN o'zgaruvchisidan foydalaning
 ADMIN_ID = int(os.getenv("ADMIN_ID") or 123456789)        # ADMIN: o'zingizni telegram idingiz bilan almashtiring
 ADMIN_CHANNEL_ID = int(os.getenv("ADMIN_CHANNEL_ID") or ADMIN_ID)  # ADMIN: foydalanuvchi so'rovlarini oladigan kanal yoki sizning ID
 
