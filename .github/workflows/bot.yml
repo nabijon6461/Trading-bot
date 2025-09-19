@@ -25,3 +25,10 @@ jobs:
 
       - name: Run bot
         run: python bot.py
+        - name: Run bot
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          ADMIN_ID: ${{ secrets.ADMIN_ID }}
+          ADMIN_CHANNEL_ID: ${{ secrets.ADMIN_CHANNEL_ID }}
+          API_NINJAS_KEY: ${{ secrets.API_NINJAS_KEY }}
+        run: python bot.py
